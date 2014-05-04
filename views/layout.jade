@@ -1,0 +1,93 @@
+doctype html
+html
+
+  //- HTML HEADER
+  head
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+
+    title= title || 'FACELESS FX'
+    link(rel="shortcut icon", href="/favicon.ico", type="image/x-icon")
+
+    //link(href="/stylesheets/site.min.css", rel="stylesheet")
+    link(href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css", rel="stylesheet")
+    link(href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css", rel="stylesheet")
+    link(href='/stylesheets/style.css', rel='stylesheet')
+    //- This file provides the default styling for the KeystoneJS Content 
+
+    //- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    //- Safely remove this block if you are not targeting IE8
+    //-[if lt IE 9]
+      script(src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js")
+      script(src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js")
+    //-[endif]
+
+    //- Include template-specific stylesheets by extending the css block
+    block css
+
+    //- Add any other template-specific HEAD tags by extending the head block
+    block head
+
+  //- HTML BODY
+  body
+
+    //- HEADER
+    #header: .container
+
+      div(role="navigation").navbar.navbar-inverse.navbar-fixed-top
+        .container-fluid
+          .navbar-header
+            button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+              span.sr-only Toggle navigation
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            img(src='/images/png-9.png').navbar-brand.logo
+            a.navbar-brand(href='/') FACELESS FX GUITAR PEDALS
+          .collapse.navbar-collapse
+            ul.nav.navbar-nav.navbar-right
+              li
+                a(href='/') Home
+              li.dropdown
+                a(href='#' data-toggle='dropdown').dropdown-toggle Pedals 
+                  b.caret
+                ul.dropdown-menu.inverse-dropdown
+                  li
+                    a(href='/pedals/jasmine') Jasmine Boost
+                  li
+                    a(href='/pedals/marquis') Marquis Fuzz
+              li
+                a(href='/custom') Custom
+              li
+                a(href='/repairs') Repairs &amp; Mods
+
+              
+
+    //- BODY
+    #body
+
+      //- NOTE:
+      //- There is no .container wrapping class around body blocks to allow more flexibility in design.
+      //- Remember to include it in your templates when you override the intro and content blocks!
+
+      //- The content block should contain the body of your template's content
+      block content
+
+
+    //- FOOTER
+    #footer: .container
+      .col-xs-8
+        a(href='https://twitter.com/facelessfx').fa.fa-twitter.fa-3x
+        a(href='https://www.facebook.com/facelessfx').fa.fa-facebook.fa-3x
+        a(href='/contact').fa.fa-envelope-o.fa-3x
+      .col.xs-4
+        h5.pull-right.text-muted.center &copy; Tim Cooper 2014
+
+
+
+    //- JAVASCRIPT
+    script(src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js")
+    script(src='/javascripts/bootstrap.min.js')
+    script(src='/javascripts/isotope.pkgd.min.js')
+    script(src='/javascripts/main.js')

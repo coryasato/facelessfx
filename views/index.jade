@@ -1,0 +1,111 @@
+extends layout
+
+block content
+  section.top-section
+    .container
+      .row-fluid.slider-article
+        div(id='myCarousel' class='carousel slide center' data-ride='carousel' data-pause='hover' data-interval=3000)
+          // Indicators
+          //- ol.carousel-indicators
+          //-   li(data-target='#myCarousel' data-slide-to='0' class='active')
+          //-   li(data-target='#myCarousel' data-slide-to='1' class='')
+          //-   li(data-target='#myCarousel' data-slide-to='2' class='')
+          //-   li(data-target='#myCarousel' data-slide-to='3' class='')
+          //-   li(data-target='#myCarousel' data-slide-to='4' class='')
+          //-   li(data-target='#myCarousel' data-slide-to='5' class='')
+          //-   li(data-target='#myCarousel' data-slide-to='6' class='')
+
+          .carousel-inner
+            div(class='item active')
+              img(src='/images/png-8.png' alt='Jasmine')
+            div(class='item')
+              img(src='/images/png-1.png' alt='Jasmine')
+            div(class='item')
+              img(src='/images/custom.png' alt='Jasmine')
+            div(class='item')
+              img(src='/images/png-2.png' alt='Jasmine')
+            div(class='item')
+              img(src='/images/png-3.png' alt='Jasmine')
+            div(class='item')
+              img(src='/images/design.png' alt='Jasmine')
+            div(class='item')
+              img(src='/images/jas3.png' alt='Jasmine')
+
+          // Controls
+          a(href='#myCarousel' data-slide='prev').left.carousel-control
+            span.glyphicon.glyphicon-chevron-left
+          a(href='#myCarousel' data-slide='next').right.carousel-control
+            span.glyphicon.glyphicon-chevron-right
+
+      .row
+        .col-xs-6.col-md-6.pull-right
+          h5.text-right.hand-built HAND-BUILT IN DERBY, ENGLAND
+  
+  section.pedals-section
+    .row
+      .col-md-4.col-sm-4.col-xs-4
+        h1 PEDALS
+      .clearfix.visible-xs
+      .col-md-4.col-sm-4.col-xs-4
+        h2 Jasmine Boost
+        button(data-toggle='modal' data-target='.jasmine-modal' style='background: transparent').btn.fa.fa-youtube-play.fa-5x
+        div(tabindex='-1' role='dialog' aria-labeledby='Jasmine' aria-hidden='true').modal.fade.jasmine-modal
+          .modal-dialog.modal-dialog.video-container
+            iframe(width='640' height='360' src='//www.youtube.com/embed/E60Iw2ZOB-g' frameborder='0')
+        span click for video
+      .col-md-4.col-sm-4.col-xs-4
+        h2 Marquis Fuzz
+        button(data-toggle='modal' data-target='.marquis-modal' style='background: transparent').btn.fa.fa-youtube-play.fa-5x
+        div(tabindex='-1' role='dialog' aria-labeledby='Marquis' aria-hidden='true').modal.fade.marquis-modal
+          .modal-dialog.modal-dialog.video-container
+            iframe(width='640' height='360' src='//www.youtube.com/embed/PnSVtV1DYdA' frameborder='0')
+        span click for video
+
+  section.custom-section
+    h1.builds BUILDS
+    div(data-isotope-options='{"itemSelector": ".isoitem", "masonry": {"columnWidth": 50, "isFitWidth": true}}').isotope.js-isotope.well
+      img(src='http://photos-e.ak.instagram.com/hphotos-ak-prn/1516604_1447247685520428_293391968_n.jpg').isoitem.width2.height2
+      img(src='http://photos-h.ak.instagram.com/hphotos-ak-ash/10013076_270263569808183_1302448897_n.jpg').isoitem.width-big
+      img(src='http://distilleryimage3.ak.instagram.com/37aff7ea683411e3b46e0e4c3f548967_8.jpg').isoitem
+      img(src='http://distilleryimage4.ak.instagram.com/3771ba90637811e3b4870e9031488e14_8.jpg').isoitem.width2.height2
+      img(src='http://photos-h.ak.instagram.com/hphotos-ak-prn/10268948_442890915814183_1461170075_n.jpg').isoitem.width-big
+      img(src='http://photos-h.ak.instagram.com/hphotos-ak-ash/1660356_680260842030839_1492558093_n.jpg').isoitem
+      img(src='http://distilleryimage10.ak.instagram.com/f2fe6396c4c411e3a9ff0002c9aeb00a_8.jpg').isoitem.width-big
+      img(src='http://distilleryimage4.ak.instagram.com/bd9e1d2ac3ef11e395730002c9de1468_8.jpg').isoitem.width2.height2 
+      img(src='http://distilleryimage7.ak.instagram.com/dedff0f0bb5011e395e91267d61f66bb_8.jpg').isoitem.width-big
+
+
+
+    
+
+      
+  //- section.middle-section
+  //-   .container.middle-container
+  //-     .row
+  //-       .col-xs-6.col-sm-3.image-section
+  //-         a(href='#')
+  //-           h4.text-center JASMINE BOOST
+  //-           hr
+  //-           img(src='/images/png-7.png').img-circle.img-responsive.center-block
+  //-       .col-xs-6.col-sm-3.image-section
+  //-         a(href='#')
+  //-           h4.text-center MARQUIS FUZZ
+  //-           hr
+  //-           img(src='/images/png-6.png').img-circle.img-responsive.center-block
+  //-       .clearfix.visible-xs
+  //-       .col-xs-6.col-sm-3.image-section
+  //-         a(href='#')
+  //-           h4.text-center CUSTOM PEDALS
+  //-           hr
+  //-           img(src='/images/png-5.png').img-circle.img-responsive.center-block
+  //-       .col-xs-6.col-sm-3.image-section
+  //-         a(href='#')
+  //-           h4.text-center REPAIRS &amp; MODS
+  //-           hr
+  //-           img(src='/images/png-4.png').img-circle.img-responsive.center-block
+        
+
+      
+
+
+        

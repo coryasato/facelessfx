@@ -1,0 +1,158 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #222222;
+}
+#body {
+  min-height: 100%;
+  height: auto;
+  margin: 0 auto -60px;
+  padding: 0 0 60px;
+}
+a {
+  color: #333;
+}
+a:hover {
+  color: pink;
+  text-decoration: none;
+}
+li {
+  line-height: 1.45em;
+}
+.inverse-dropdown {
+  background-color: #222;
+  border-color: #080808;
+}
+.inverse-dropdown>li>a {
+  color: #999;
+}
+.inverse-dropdown>li>a:hover {
+  color: #fff;
+  background-color: #000;
+}
+.inverse-dropdown>.divider {
+  background-color: #000;
+}
+.btn:focus {
+  outline: none;
+}
+.top-section {
+  background-color: #353138;
+  padding-bottom: 1em;
+  padding-top: 6.75em;
+}
+.logo {
+  width: 50px;
+  padding: 3px;
+}
+.hand-built {
+  color: #EFF5EB;
+}
+.pedals-section {
+  background-color: #4E4952;
+  height: 100%;
+  padding: 4em;
+}
+.video-container {
+  position: relative;
+  padding-bottom: 75.25%;
+  padding-top: 20%;
+  height: 0;
+  overflow: hidden;
+}
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.custom-section {
+  background-color: #222222;
+  padding: 4em;
+}
+.custom-section .well {
+  background-color: rgba(53,49, 56, 1);
+}
+.custom-section h1 {
+  color: #353138;
+  margin: 0 auto;
+  padding-bottom: 0.5em;
+}
+.isotope {
+  margin: 0 auto;
+}
+.isotope:after {
+  display: block;
+  clear: both;
+}
+.isoitem {
+  float: left;
+  width: 100px;
+  height: 100px;
+}
+.isoitem.width2 { width: 200px; }
+.isoitem.height2 { height: 200px; }
+.isoitem.width-big {width: 300px; height: 300px;}
+.isotope .isotope-item {
+  --webkit-transition-duration: 0.8s;
+  --moz-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+}
+.isotope .isotope-item {
+  --webkit-transition-property: -webkit-transform, opacity;
+    ---moz-transition-property: -moz-transform, opacity;
+           transition-property: transform, opacity; 
+}
+
+#footer {
+  height: 60px;
+  background-color: #353138;
+  padding: 0.8em;
+}
+#footer a {
+  color: grey;
+  padding-right: 0.7em;
+}
+#footer a:hover {
+  color: pink;
+}
+.modal-content{
+  margin: 0 auto;
+  padding: 0;
+  background-color: #222;
+}
+.opac {
+  opacity: 0.7;
+}
+.pedals-top-section {
+  background-color: #353138;
+  padding-bottom: 2em;
+  padding-top: 6.75em;
+}
+.pedals-top-section h1 {
+  color: white;
+}
+
+.pedals-top-section>.well {
+  background-color: #4E4952
+}
+.pedals-info-section {
+  padding: 3em;
+  color: #999;
+  background-color: #4E4952;
+}
+.pedals-sales {
+  padding: 2em;
+}
+.social {
+  padding: 0.2em;
+}
+
+
+
+
